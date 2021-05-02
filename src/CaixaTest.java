@@ -3,10 +3,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CaixaTest {
-    Caixa Cx = new Caixa();
-
+    Caixa cx = new Caixa();
     @Test
     void deposito() {
+        assertEquals(true, cx.deposito(-200));
     }
     @Test
     void saque() {
