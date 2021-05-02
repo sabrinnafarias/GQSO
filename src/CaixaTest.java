@@ -6,10 +6,11 @@ class CaixaTest {
     Caixa cx = new Caixa();
     @Test
     void deposito() {
-        assertEquals(true, cx.deposito(-200));
+        assertEquals(false, cx.deposito(-200));
     }
     @Test
     void saque() {
+        assertEquals(false, cx.deposito(-200));
     }
     @Test
     void saldo() {
