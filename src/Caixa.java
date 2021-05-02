@@ -1,14 +1,16 @@
 public class Caixa {
     private double saldo;
 
-    public Caixa(double saldo) {
-        this.saldo = saldo;
+    public Caixa() {
+        this.saldo = 0;
     }
-    public void deposito(double valor){
+    public boolean deposito(double valor){
         this.saldo+=valor;
+        return true;
     }
-    public void saque(double valor){
+    public boolean saque(double valor){
         this.saldo-=valor;
+        return true;
     }
     public double saldo(){
         return this.saldo;
